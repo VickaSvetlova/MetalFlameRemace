@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 57be9602ff461f64f824a266b6bfcd19
+timeCreated: 1494873919
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Slider
+  fontNames:
+  - Slider
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

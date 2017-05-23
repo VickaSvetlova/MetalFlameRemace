@@ -41,6 +41,7 @@ public class Robot : MonoBehaviour
     [Header("Speeds")]
     public float WalkSpeed = 3;
     public float JumpForce = 10;
+    public string _direct="right";
 
     private MoveState _moveState = MoveState.Idle;
     private DirectionState _directionState = DirectionState.Right;
@@ -48,6 +49,7 @@ public class Robot : MonoBehaviour
     private Rigidbody2D _rigbody;
     private Animator _animatorController;
     private float _walkTime = 0, _walkCooldawn = 0.02f;
+
     #endregion
 
     #region Methods
@@ -88,6 +90,7 @@ public class Robot : MonoBehaviour
             {
                 _transform.localScale = new Vector3(-transform.localScale.x, _transform.localScale.y, transform.localScale.z);
                 _directionState = DirectionState.Right;
+                _direct = "right";
             }
             _walkTime = _walkCooldawn;
             _animatorController.Play("Walk");
@@ -103,6 +106,7 @@ public class Robot : MonoBehaviour
             {
                 _transform.localScale = new Vector3(-transform.localScale.x, _transform.localScale.y, transform.localScale.z);
                 _directionState = DirectionState.Left;
+                _direct = "left";
             }
             _walkTime = _walkCooldawn;
             _animatorController.Play("Walk");
